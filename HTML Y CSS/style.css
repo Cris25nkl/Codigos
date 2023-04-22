@@ -1,0 +1,60 @@
+/* Sintaxis para separar por elementos unicos */
+h1 {
+  color: blueviolet;
+  font-family: 'Times New Roman', Times, serif
+
+}
+h3 {
+  color: crimson;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+p {
+  color: chocolate;
+}
+
+img {
+  width:  200px;
+}
+
+/* div {
+  background-color: rgb(15, 79, 104);
+} */
+/* ----------------------------------------------------------- */
+/* Sintaxis para separar por clases */
+.SpyxFamily {
+  width: 200px;
+  /* border-width: 5px;
+  border-color: chocolate;
+  border-style: dashed; */
+
+  border-radius: 50px;
+
+  margin: 15px 20px;
+  background-color: violet;
+  border-width: 5px;
+  border-style: solid;
+}
+
+.listas {
+  color: rgb(13, 53, 128);
+  font-size: 20px;
+}
+
+/* -------------------------------------------------------- */
+/* Sintaxis para separar con id */
+#titulo-h3 {
+  font-size: 30px;
+  color: blue;
+
+}
+/* -------------------------------------------------------- */
+/* Selectores de atributos */
+
+img[alt] { /*Tipo de elemento y dentro el atributo que tiene*/
+  border-radius: 30%;
+}
+
+[type="radio"] {
+  margin: 10px;
+}

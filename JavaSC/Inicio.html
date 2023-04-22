@@ -1,0 +1,530 @@
+<script>
+   
+   /*console.log("Hola mundo");
+
+    
+
+    var a = 3;
+    console.log(a);
+
+
+var arreglo = ["hola", 34, 'r',6];
+console.log(arreglo)
+
+var listaEstudiantes = [
+    ["Juan", 5],
+    ["Mario", 4],
+    ["Carlos", 2]
+];
+
+console.log(listaEstudiantes)
+
+
+for (let i = arreglo.length; i > -1; i--){
+    console.log(arreglo[i])
+}
+
+//PROYECTO
+
+var lista =[
+    ["cereal", 3],
+    ["leche",2],
+    ["pan", 4],
+    ["Galletas", 7]
+];
+
+console.log("Voy a comprar "+ lista[0][1]+ " unidades de "+ lista[0][0])
+
+
+function mostrar() {
+    console.log("Hello my friend");
+}
+
+function sumar(a,b){
+    return "El resultado es: "+ (a + b)
+}
+
+function concatenar(c1,c2){
+    return c1 + " " + c2
+}
+
+
+if (4 > 8) {
+    console.log("Es verdad")
+}else if (2 < 9) {
+    console.log("Comoooooo")
+}else{
+    console.log("No es verdad")
+}
+
+//Mini Proyecto
+
+function golf(par, golpes) {
+     if (golpes == 1) {
+        return "Hole in one";
+     }else if (golpes <= par -2) {
+        return "Eagle"  
+     }else if (golpes == par - 1) {
+        return "Birdie"
+     }else if (golpes == par) {
+        return "Par"
+     }else if (golpes == par + 1) {
+        return "Bogey"
+     }else if (golpes == par + 2) {
+        return "Double Bougey"
+     }else if (golpes >= par +  3) {
+        return "Go home"
+     }
+    
+}
+
+
+switch (3) {
+    case 1:
+        console.log("primero");
+        break;
+    case 2:
+        console.log("segundo");
+        break;
+    default:
+        break;
+}
+
+//Contar Cartas
+
+var conteo  = 0;
+function BlackJack(carta) {
+    var decision;
+
+    switch (carta) {
+        case 1:
+        case 2:
+        case 3:
+        case 4:
+        case 5:
+        case 6:
+            conteo++;
+            break;
+        case 10:
+        case "J":
+        case "Q":
+        case "K":
+        case "A":
+            conteo--;
+            break;
+    }
+
+    if (conteo > 0) {
+        decision = "Apostar"
+    }else {
+        decision = "Esperar"
+    }
+
+    return conteo +" "+ decision
+
+    //retornas conteo y apostar o no apostar
+    
+}
+
+
+var perro ={
+    "nombre" : "Lucas",
+    "Edad" : 5,
+    "Peso": 6,
+    "Raza" :  "Criollo"
+};
+
+var edad = perro["Edad"];
+console.log(perro.nombre);
+console.log(edad)
+
+
+var mochila = {
+    color : "Azul",
+    tamaño : "mediano",
+    contenido : ["botella", "cuaderno"]
+}
+
+console.log(mochila["contenido"])
+
+mochila.contenido.push("lapiz");
+
+console.log(mochila.contenido)
+
+var curso = {
+    titulo : "Aprende JS",
+    idioma : "Español",
+    duracion : 30
+}
+
+curso.vistas = 34500;
+
+console.log(curso)
+
+delete curso.vistas;
+console.log(curso)
+
+console.log(curso.hasOwnProperty("titulo"));
+
+
+//Objetos complejos
+
+var ordenesPizza = [
+    {
+        tipo:"margarita",
+        tamaño : "individual",
+        precio : 5.62,
+        toppings: ["extra queso", "champiñones", "piña"],
+        paraLlevar: true
+    },
+// 2
+    {
+        tipo:"cuatro quesos",
+        tamaño : "familiar",
+        precio : 18.5,
+        toppings: ["extra queso", "pimenton"],
+        paraLlevar: false
+    },
+//3
+    {
+        tipo:"napolitana",
+        tamaño : "individual",
+        precio : 18.5,
+        toppings: [],
+        paraLlevar: true
+    }
+]
+
+console.log(ordenesPizza[0]);
+
+
+var misplantas = [
+    {
+        tipo : "flores",
+        lsita : [ "rosas", "tulipanes", "dientes de leon"]
+    },
+
+    {
+        tipo: "arbol",
+        lista: ["abeto", "pino"]
+    }
+]
+
+console.log(misplantas[0].lsita[0])
+//Coleccion de discos
+var coleccionD = {
+    7853: {
+        tituloDisco: "Bee Gees",
+        artista: "Bee Gees",
+        canciones: [ "stasyn alive"]
+    },
+
+    5436: {
+        titulo: "ABBS"
+    }
+}
+
+function actualizarDisco(discos, id, propiedad, valor) {
+    if (valor === ""){
+        delete discos[id][propiedad];
+    }else if(propiedad === "canciones"){
+        discos[id][propiedad] = discos[id][propiedad] || [];
+        discos[id][propiedad].push(valor);
+    } else {
+        discos[id][propiedad] = valor;
+    }
+
+
+}
+
+
+//ciclos
+var x=0;
+while (x <= 5) {
+    
+    console.log("hola")
+    x++;
+}
+
+var arreglo =[];
+var i = 1;
+
+console.log(arreglo);
+
+while (i<= 10) {
+    arreglo.push(i);
+    i++;
+}
+
+console.log(arreglo);
+
+//for
+var lista =[1,2,3,4,5,1]
+
+var sum = 0;
+for (let i = 0; i < lista.length; i++) {
+    sum = sum + lista[i];
+}
+
+console.log(sum)
+
+var pares=[]
+
+for (let i = 0; i < 20; i+=2) {
+    pares.push(i);
+    
+}
+
+console.log(pares)
+
+
+var matriz = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+]
+
+for (let i = 0; i < matriz.length; i++) {
+    for (let j = 0; j < matriz[i].length; j++) {
+        console.log(matriz[i][j])
+        
+    }
+    
+}
+
+
+var x = 0;
+
+do {
+    console.log("que tal")
+    x++;
+} while (x < 10);
+
+
+
+var contactos =[
+    {
+        nombre : "nora",
+        apellido: "Nav",
+        cel: "12456385",
+        gustos: ["pizza", "programar"]
+    },
+    {
+        nombre : "lili",
+        apellido: "seft",
+        cel: "12488854",
+        gustos: ["carne", "programar"]
+    },
+    {
+        nombre : "carol",
+        apellido: "estb",
+        cel: "124512487",
+        gustos: ["pizza", "violin"]
+    }
+]
+
+function buscarperfil(nombre, propiedad) {
+    for (let i = 0; i < contactos.length; i++) {
+        if (contactos[i].nombre===nombre) {
+            return contactos[i][propiedad] || "La propiedad no existe"
+        }
+    }
+    return "El contacto no existe"
+}
+
+
+function numaleatorio() {
+    return Math.floor(Math.random()*20)
+}
+
+function rango(limInf, linSup) {
+    return Math.floor(Math.random()*(linSup - limInf +1)) + limInf
+    
+}
+
+function menor(x,y) {
+    return x < y ? x : y;
+}
+
+const fecha = () => new Date();
+const sumar =(v) => v + 3;
+const concatenar = (arr1,arr2) => arr1.concat(arr2);
+
+function funcion(...args){
+    console.log(args)
+}
+
+console.log("hola".length)
+
+const numeros = (...args) => {
+    return x + y + z;
+}
+
+
+const usuario = {
+    nombre : "CArlos",
+    edad: 34
+}
+
+//asignar cualquier cantidad
+
+const {nombre, edad} = usuario;
+
+var coordenadad = {
+    x:4,
+    y:5,
+    z:9
+}
+
+const{x,y,z} = coordenadad;
+
+
+
+const usuario ={
+    jhon: {
+        edad:26,
+        correo:"crararr@hotmail.com"
+    }
+};
+
+const {jhon:{edad:nueva,correo:hello}} = usuario
+
+const PRONOSTICO_LOCAL ={
+    ayer : {
+        min:61,
+        max:45
+    },
+    hoy : {
+        min:45,
+        maz: 48
+    },
+    manana : {
+        min:26,
+        max:36
+    }
+};
+
+const {ayer: {min:minim}} = PRONOSTICO_LOCAL;
+
+console.log(minim)
+
+
+var a;
+var b;
+var args;
+[a,b,...args] = [1,2,3,4,5,6,7];
+
+const arreglo = [1,2,3,4,5,6]
+
+const remover = (arreglo) => {
+    const [ , , , ...nuevoarreglo] = arreglo;
+    return nuevoarreglo
+}
+
+console.log(arreglofinal=remover(arreglo))
+
+
+var nuevoPerfil={
+    nombre:"Cris",
+    edad:22,
+    nacionalidad: "Español",
+    ubicacion: "España"
+};
+
+//const actualizar = (informacion) => {
+    //const {nombre,edad,nacionaidad,ubicacion} = informacion
+    
+//}
+const actualizar = ({nombre, edad,nacionalidad, ubicacion})=>{
+    console.log(nombre);
+    console.log(nacionalidad);
+    console.log(edad);
+    console.log(ubicacion);
+}
+
+const estadisticas ={
+    max:56.5,
+    desviacionEstandar: 4.34,
+    mediana:34.4,
+    modo:43,
+    min: -0.5,
+    promedio:35.5
+};
+
+const mitad =({max,min}) => (max + min) / 2.0;
+console.log(mitad(estadisticas))
+
+
+//(` bactick)
+
+var a = 9;
+
+var arreglo =["hola","como","te va"]
+
+console.log(`El arreglo es ${JSON.stringify(arreglo)}`)
+
+const SALUDO = `Hola mi nombre es ${nombre}`
+
+//Crear objetos concisos
+
+const crearPersona = (nombre, edad, idioma)=> {
+    return {
+        nombre:nombre,
+        edad:edad,
+        idioma:idioma
+    }
+}
+//equivalencia
+
+const crearPErsona2 = (nombre, edad, idioma) => ({nombre, edad, idioma})
+console.log(crearPErsona2("Cris", 33,"español"))
+
+
+const persona ={
+    nombre : "Isabel",
+    presentar: function(){
+        return `Hola mi nombre es ${this.nombre}`;
+    }
+};
+
+console.log(persona.presentar());
+
+
+//CLASES
+class Transbordador{
+    constructor(planeta){
+        this.planeta = planeta;
+    }
+}
+
+var zeus = new Transbordador("Marte");
+console.log(zeus.planeta)
+
+class Mascota{
+    constructor(nombre, edad){
+        this.nombre=nombre;
+        this.edad=edad;
+    }
+}
+
+var Lucas = new Mascota("Lucas", 8)
+*/
+
+class Libro{
+    constructor(autor){
+        this._autor = autor;
+    }
+
+    get autor(){
+        return this._autor;
+    }
+
+    set autor(nuevoAutor){
+        this._autor = nuevoAutor;
+    }
+}
+
+const libro  = new Libro("Anonimo");
+console.log(libro.autor)
+
+</script>

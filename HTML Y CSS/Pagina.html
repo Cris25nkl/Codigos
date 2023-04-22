@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>INICIO</title>
+<!-- Estilos css en html -->
+    <!-- <style>
+      h3 {
+        color: rgba(255, 0, 221, 0.692)
+      }
+    </style> -->
+
+<!-- Conectar hojas de estilos con css en archivos externos -->
+    <link href="style.css" rel="stylesheet">
+    <!-- *************************** -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Oleo+Script+Swash+Caps:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+
+  <body> 
+    <h1><center>BIENVENIDO</center></h1>
+
+    <h2>DETALLES</h2>
+    <main>
+      <p>Como podemos observar aqui les presento el resumen de lo que trara esta pagina que estoy creando recientemente.</p>
+      <p>Gracias por leer.</p>
+      <p>Tipos de fuentes que se pueden importar para las paginas Web</p>
+      <a href="https://fonts.google.com/" target="_blank">Estilos de fuentes</a><br>
+      <a href="#pagina-1">Visita la pagina de documentacion</a>
+      <br>
+      
+
+      <img src="https://as01.epimg.net/meristation/imagenes/2022/06/03/noticias/1654266929_684931_1654267911_noticia_normal.jpg" class="SpyxFamily"><br><br>
+
+      <img src="descarga.jpg" alt="">
+      
+
+      <h3 id="pagina-1">Pagina de documentacion</h3>
+      <p><a href="https://developer.mozilla.org/es/" target="_blank" rel="noopener noreferrer"> MDN Web docs</a></p>
+      
+        <!-- Listas ordenada y no ordenadas -->
+      <h3 id="titulo-h3">Ejemplos de listas</h3>
+      <div>
+        <ul class="listas">
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+        </ul>
+        <h3>Listas ordenada</h3>
+        <ol class="listas">
+          <li><strong> casa</strong></li>
+          <li>carro</li>
+          <li>trabajo</li>
+          <li>comida</li>
+        </ol>
+    </div>
+        <!-- ************************************ -->
+      <!-- FORMULARIOS -->
+      <form action="/enviar">
+
+        <p>Escoja la respuesta correcta</p>
+        <label for="suma"><input id="suma" type="radio" name="sumas"> 1+1=2</label><br>
+
+
+        <label for="suma2"><input id="suma2" type="radio" name="sumas"> 1+2=4</label>
+        <br>  <!-- SALTOS DE LINEA -->
+        
+        <label for="opcion"><input id="opcion" type="checkbox" name="opciones" value="esta">Esta</label>
+        <!---->
+        <label for="opcion2">
+          <input 
+          id="opcion2" type="checkbox" name="opciones" value="oesta">O esta
+        </label>
+
+        <!---->
+        <label for="opcion3">
+          <input  id="opcion3"
+            type="checkbox"
+            name="opciones"
+            value="ambas">
+            Ambas
+        </label><br>
+
+
+
+        <input type="text" placeholder="NOMBRE" required>
+        <br>
+        <button type="submit">GUARDAR</button>
+      </form>
+<!-- ***************************************************** -->
+    </main>
+    <footer>
+      <p><small> Sin derechos de Autor</small></p>
+    </footer>
+  </body>
+</html>

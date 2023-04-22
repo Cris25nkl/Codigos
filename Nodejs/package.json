@@ -1,0 +1,20 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "Practica cliente servidor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "practica",
+    "modelo",
+    "cliente",
+    "servidor"
+  ],
+  "author": "Cristian David F",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.3.2"
+  }
+}

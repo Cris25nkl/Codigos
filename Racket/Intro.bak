@@ -1,0 +1,22 @@
+#lang racket
+(define a 4)
+(define b "hola")
+
+(define funcion
+  (lambda (x y) (+ x y)))
+
+
+(define edad_D
+  (lambda (edad)
+    (cond
+      [(and (>= edad 0)(< edad 18))"No entra"]
+      [(and (>= edad 18) (<= edad 30))"Seccion jovenes"]
+      [(and (> edad 30)(< edad 50))"Seccion adultos"]
+      [(>= edad 50)"Viejoteca"]
+      [else "Edad no valida"]
+      )
+    )
+  )
+
+
+
